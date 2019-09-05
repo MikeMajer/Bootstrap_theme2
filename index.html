@@ -15,16 +15,18 @@
 
 <body>
 
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-light">
+  <!-- MAIN NAVIGATION -->
+
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
     <div class="container">
-      <a href="index.html" class="navbar-brand ">
+      <a href="index.html" class="navbar-brand d-md-none">
           <i class="fas fa-cookie-bite"></i> Tasty
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse text-uppercase" id="navbarCollapse">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item">
             <a href="" class="nav-link">Home</a>
           </li>
@@ -38,19 +40,86 @@
               <a href="" class="dropdown-item">Menu: Special</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Gallery</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a href="" class="nav-link">Reservation</a>
+          </li>
+          <a href="index.html" class="navbar-brand mx-5 d-none d-md-block">
+              <i class="fas fa-cookie-bite"></i> Tasty
+          </a>
+          <li class="nav-item">
+            <a href="" class="nav-link ">Gallery</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- HOME SECTION -->
+
+  <section id="home-section">
+    <div class="dark-overlay">
+      <!-- Main Content -->
+      <div class="home-section-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-white">
+              <ol class="breadcrumb bg-transparent text-secondary justify-content-center text-uppercase m-0">
+                <li class="breadcrumb-item text-warning"><small>Cafe</small></li>
+                <li class="breadcrumb-item"><small>Restaurant</small></li>
+              </ol>
+              <h1 class="display-2"><strong>Tasty</strong></h1>
+              <p class="lead py-md-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa tempore incidunt maxime
+                consequatur molestias facilis magni, accusamus est sapiente commodi ullam, dolor provident sit
+                consectetur.Ipsum non quibusdam deleniti aliquam.
+              </p>
+              <button class="btn btn-outline-warning my-3">Make Reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="home-section-footer d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <!-- Social Icons -->
+            <div class="col-sm-6 ml-auto">
+              <ul class="list-unstyled justify-content-sm-start justify-content-center d-flex mb-md-0">
+                <li>
+                  <a href="http://facebook.com" class="text-secondary mr-4">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com" class="text-secondary mr-4" >
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                  <a href="http://instagram.com" class="text-secondary mr-4" >
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Location -->
+            <div class="col-sm-6 d-flex justify-content-sm-end justify-content-center align-items-center mb-5 mb-sm-0 ">
+              <a href="https://goo.gl/maps/wTWgHVa2GiVRYpzB7" class="text-secondary">
+              <i class="fas fa-map-marker-alt text-warning mr-3"></i>1548 Morison Streer, Sydney
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
