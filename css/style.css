@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 #home-section {
-  background-image: url('../img/home-section.jpg');
+  background-image: url('../img/section-home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,13 +21,71 @@
   min-height: 12vh;
 }
 
+/* About Section */
+
+.about-txt::after {
+  content: "";
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  border-bottom: 2px solid #ffc107;
+}
+
+#about-two .about-txt::after {
+  margin-left: 0;
+}
+
+img {
+  position: relative;
+  box-shadow: 10px 10px 40px 0px #aaa;
+}
+
+.img-about::before{
+  position: absolute;
+  display: block;
+  content:"";
+  width: 90%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  opacity: 0.5;
+  border-top: none;
+  border-left:none;
+}
+
+.img-about.one::before {
+  top:14%;
+  right:5%;
+  border-right:none;
+}
+
+#about-two .img-about.two::before {
+  top:4%;
+  left:15%;
+  border-bottom:none;
+}
+
+#quote {
+  position: relative;
+  background-image: url("../img/section-about-quote.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+}
+
+#quote blockquote {
+  font-family: 'Special Elite', cursive;
+  font-size: 50px;
+  line-height: 2;
+}
 
 
 @media(max-width:856px){
   #main-nav {
     background-color: #333 !important;
     opacity: 0.95;
-    box-shadow: 0px 0px 8px orange;
+    box-shadow: 0px 0px 8px #ffc107;
   }
   
   .home-section-main h1 {
@@ -35,5 +94,9 @@
   .home-section-main p {
     font-size: 1rem;
   }
-  
+
+  .img-about::before {
+    display: none;
+  }
+
 }
