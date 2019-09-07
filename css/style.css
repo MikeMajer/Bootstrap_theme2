@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
+
 #home-section {
   background-image: url('../img/section-home.jpg');
   background-repeat: no-repeat;
@@ -79,6 +80,25 @@ img {
   font-size: 50px;
   line-height: 2;
 }
+
+/* Reservation */
+
+.form-control:focus {
+  border-color: #ffc107;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #ffc107;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#6c757d;
+  border-color: #6c757d;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+  box-shadow:  0 0 5px 1px #ffc107; 
+}
+
+
+
 
 
 @media(max-width:856px){
