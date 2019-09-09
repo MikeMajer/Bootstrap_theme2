@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
 
+#main-nav {
+  transition: 1s;
+}
+
 #home-section {
   background-image: url('../img/section-home.jpg');
   background-repeat: no-repeat;

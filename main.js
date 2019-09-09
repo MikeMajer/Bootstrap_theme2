@@ -6,6 +6,19 @@ let prices = [...$(".card-footer h3")];
 
 $.each([...prices], (i, price) => {
   $(price).text(`$${(Math.floor(Math.random() * 40 + 10))}`);
-  console.log(price)
 });
 
+// Navbar scroll background
+
+$(window).scroll(() => {
+  const nav = $("#main-nav");
+  const mediumScreenSize = 768;
+
+  if ($(window).scrollTop() > 0 && $(window).width() > mediumScreenSize) {
+    nav.removeClass("navbar-dark bg-transparent");
+    nav.addClass("navbar-light bg-white");
+  } else {
+    nav.removeClass("navbar-light bg-white");
+    nav.addClass("navbar-dark bg-transparent");
+  }
+});
