@@ -36,7 +36,7 @@
   margin-left: 0;
 }
 
-img {
+#about img {
   position: relative;
   box-shadow: 10px 10px 40px 0px #aaa;
 }
@@ -81,6 +81,17 @@ img {
   line-height: 2;
 }
 
+/* Menu */
+
+.card-img-top {
+  max-height: 235px;
+}
+
+#menu .nav .active {
+  color:  #ffc107 !important;
+} 
+
+
 /* Reservation */
 
 .form-control:focus {
@@ -96,8 +107,6 @@ img {
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
   box-shadow:  0 0 5px 1px #ffc107; 
 }
-
-
 
 
 
