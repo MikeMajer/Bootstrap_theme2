@@ -71,7 +71,6 @@
 }
 
 #quote {
-  position: relative;
   background-image: url("../img/section-about-quote.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -112,9 +111,49 @@
   box-shadow:  0 0 5px 1px #ffc107; 
 }
 
+/* Gallery */
 #gallery img {
   height: 470px;
   width: 350px;
+}
+
+
+/* Events */
+
+.carousel-inner{
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  height: 470px;
+}
+
+
+.carousel-img-1 {
+  background-image: url("../img/section-events-happy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-img-2 {
+  background-image: url("../img/section-events-taco.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-img-3 {
+  background-image: url("../img/section-events-pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media(max-width:856px){
