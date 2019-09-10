@@ -22,3 +22,10 @@ $(window).scroll(() => {
     nav.addClass("navbar-dark bg-transparent");
   }
 });
+
+// Lightbox init
+
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});

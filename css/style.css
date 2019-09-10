@@ -112,7 +112,10 @@
   box-shadow:  0 0 5px 1px #ffc107; 
 }
 
-
+#gallery img {
+  height: 470px;
+  width: 350px;
+}
 
 @media(max-width:856px){
   #main-nav {

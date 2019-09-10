@@ -9,6 +9,8 @@
     integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <title>Bootstrap Theme_2</title>
 </head>
@@ -607,6 +609,54 @@
     </div>
   </section>
 
+  <!-- PHOTO GALLERY -->
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center my-5">
+          <h1>Photo Gallery</h1>
+          <p class="lead">Check out our photos</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-one.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+          <img src="img/section-gallery-one.jpg" alt="" class="img-fluid">
+        </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-two.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+          <img src="img/section-gallery-two.jpg" alt="" class="img-fluid">
+        </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-three.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+          <img src="img/section-gallery-three.jpg" alt="" class="img-fluid">
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-four.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+              <img src="img/section-gallery-four.jpg" alt="" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-five.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+              <img src="img/section-gallery-five.jpg" alt="" class="img-fluid">
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="img/section-gallery-six.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="img/section-gallery-six.jpg" alt="" class="img-fluid">
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- NEWSLETTER SECTION -->
 
   <section id="newsletter" class="bg-dark">
@@ -631,14 +681,10 @@
 
   <!-- MAP -->
 
-  <section id="map">
-    <div class="row">
-      <div class="col">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.212872232994!2d151.2117874158224!3d-33.858404425952116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae66606e9307%3A0xaae6de95a404143a!2sOpera%20Bar!5e0!3m2!1sen!2sau!4v1568021441731!5m2!1sen!2sau"
-          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    </div>
+  <section id="map" class="bg-dark">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.212872232994!2d151.2117874158224!3d-33.858404425952116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae66606e9307%3A0xaae6de95a404143a!2sOpera%20Bar!5e0!3m2!1sen!2sau!4v1568021441731!5m2!1sen!2sau"
+      width="100%" height="460" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </section>
 
   <!-- FOOTER -->
@@ -649,9 +695,9 @@
         <div class="col-md-6">
           <h3 class="text-warning">Opening Hours</h3>
           <h5>Mon - Fri</h5>
-          <p class="lead">8:00 - 23:00</p>
+          <p class="lead text-muted">8:00 - 23:00</p>
           <h5>Sat - Sun</h5>
-          <p class="lead">10:00 - 18:00</p>
+          <p class="lead text-muted">10:00 - 18:00</p>
         </div>
         <div class="col-md-6 my-auto">
           <div class="social">
@@ -678,7 +724,7 @@
       </div>
       <div class="row">
         <div class="col mt-5">
-          <p class="mb-0">Copyright &copy; <span id="year"></span> Taste</p>
+          <p class="mb-0 lead">Copyright &copy; <span id="year"></span> Taste</p>
         </div>
       </div>
     </div>
@@ -694,6 +740,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
 
