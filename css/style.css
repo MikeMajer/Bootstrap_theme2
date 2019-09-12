@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
+body {
+  position: relative;
+}
 
 #main-nav {
   transition: 1s;
