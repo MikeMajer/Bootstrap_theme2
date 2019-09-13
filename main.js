@@ -38,7 +38,7 @@ $('body').scrollspy({ target: '#main-nav', offset: navbarHeight });
 
 
 // Smooth Scrolling
-$("#main-nav a").on('click', function (e) {
+$("#main-nav a, #home a").on('click', function (e) {
   if (this.hash !== "") {
     e.preventDefault();
 
@@ -46,7 +46,7 @@ $("#main-nav a").on('click', function (e) {
 
     $('html,body').animate({
       scrollTop: $(hash).offset().top - (navbarHeight - 1)
-    }, 800, function () {
+    }, 1200, function () {
 
       window.location.hash = hash - (navbarHeight - 1);
     });

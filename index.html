@@ -83,7 +83,7 @@
                 consequatur molestias facilis magni, accusamus est sapiente commodi ullam, dolor provident sit
                 consectetur.Ipsum non quibusdam deleniti aliquam.
               </p>
-              <button class="btn btn-outline-warning text-light my-3">Make Reservation</button>
+              <a href="#reservation" class="btn btn-outline-warning text-light my-3">Make Reservation</a>
             </div>
           </div>
         </div>
@@ -679,7 +679,8 @@
             <h4 class="text-muted">02.09</h4>
             <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vero!
             </p>
-            <button class="btn btn-outline-warning text-white px-5 my-4">Join</button>
+            <button class="btn btn-outline-warning text-white px-5 my-4" data-toggle="modal"
+              data-target="#joinModal">Join</button>
           </div>
         </div>
         <div class="carousel-item carousel-img-2 d-flex flex-column justify-content-center">
@@ -689,7 +690,8 @@
             <h4 class="text-muted">10.09</h4>
             <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vero!
             </p>
-            <button class="btn btn-outline-warning text-white px-5 my-4">Join</button>
+            <button class="btn btn-outline-warning text-white px-5 my-4" data-toggle="modal"
+              data-target="#joinModal">Join</button>
           </div>
         </div>
         <div class="carousel-item carousel-img-3 d-flex flex-column justify-content-center">
@@ -699,7 +701,8 @@
             <h4 class="text-muted">20.09</h4>
             <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vero!
             </p>
-            <button class="btn btn-outline-warning text-white px-5 my-4">Join</button>
+            <button class="btn btn-outline-warning text-white px-5 my-4" data-toggle="modal"
+              data-target="#joinModal">Join</button>
           </div>
         </div>
 
@@ -713,6 +716,50 @@
 
     </div>
   </section>
+
+
+  <!-- Events Join Modal -->
+  <div class="modal fade" id="joinModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Join Our event</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="modalForm">
+            <div class="form-group">
+              <label for="name" class="col-form-label">*Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">*Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="your.email@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="e.g. (02) 3333-3333" minlength="10">
+            </div>
+            <div class="form-group">
+              <label for="event-name" class="col-form-label">Event Name</label>
+              <select id="event-name" class="form-control">
+                <option selected>Happy Monday</option>
+                <option>Taco Tuesday</option>
+                <option>Pizza Friday</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-outline-warning" form="modalForm">Join Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- CONTACT SECTION  -->
 
