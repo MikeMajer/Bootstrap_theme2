@@ -43,6 +43,9 @@ body {
   }
   .home-footer {
     min-height: 12vh;
+    a {
+      text-decoration: none;
+    }
   }
 }
 .dark-overlay {

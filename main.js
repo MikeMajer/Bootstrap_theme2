@@ -31,8 +31,10 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
 });
 
 
-// Scroll Spy init
-$('body').scrollspy({ target: '#main-nav' });
+// Scrollspy init
+const navbarHeight = $("#main-nav").prop("clientHeight");
+
+$('body').scrollspy({ target: '#main-nav', offset: navbarHeight });
 
 
 // Smooth Scrolling
@@ -43,11 +45,12 @@ $("#main-nav a").on('click', function (e) {
     const hash = this.hash;
 
     $('html,body').animate({
-      scrollTop: $(hash).offset().top
+      scrollTop: $(hash).offset().top - (navbarHeight - 1)
     }, 800, function () {
 
-      window.location.hash = hash;
+      window.location.hash = hash - (navbarHeight - 1);
     });
+
   }
 });
 
@@ -62,7 +65,7 @@ function dropdownClassRemove() {
 // Menu section tab navigation
 $("#menuTab a").on("click", function () {
   if (this.text !== $(".dropdown-item.active").text()) {
-    dropdownClassRemove()
+    dropdownClassRemove();
     if (this.text === "Breakfast") {
       $(".dropdown-item:nth-of-type(1)").addClass("active");
     } else if (this.text === "Lunch") {
@@ -76,7 +79,7 @@ $("#menuTab a").on("click", function () {
 })
 
 // Dropdown List - navbar
-$(".dropdown-item").on("click", function (e) {
+$(".dropdown-item").on("click", function () {
 
   const tab = this.text;
 
@@ -112,13 +115,13 @@ $(window).on('activate.bs.scrollspy', function (e, obj) {
     dropdownClassRemove();
 
     if (($("#menuTabContent #breakfast").hasClass("show"))) {
-      $(".dropdown-item:nth-of-type(1)").addClass("active")
+      $(".dropdown-item:nth-of-type(1)").addClass("active");
     } else if (($("#menuTabContent #lunch").hasClass("show"))) {
-      $(".dropdown-item:nth-of-type(2)").addClass("active")
+      $(".dropdown-item:nth-of-type(2)").addClass("active");
     } else if (($("#menuTabContent #dinner").hasClass("show"))) {
-      $(".dropdown-item:nth-of-type(3)").addClass("active")
+      $(".dropdown-item:nth-of-type(3)").addClass("active");
     } else if (($("#menuTabContent #mains").hasClass("show"))) {
-      $(".dropdown-item:nth-of-type(4)").addClass("active")
+      $(".dropdown-item:nth-of-type(4)").addClass("active");
     }
   }
 

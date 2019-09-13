@@ -14,9 +14,12 @@
     }
   } 
 
-  .img-about::before {
-    display: none;
+  #about {
+    .img-about::before {
+      display: none;
+    }
   }
+  
 
   #quote{
     blockquote {
