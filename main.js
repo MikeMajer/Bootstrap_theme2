@@ -10,19 +10,24 @@ $.each([...prices], (i, price) => {
 });
 
 
-// Navbar scroll background change
-$(window).scroll(() => {
+// Navbar Scroll Background Change & Scroll-Up
+$(window).scroll(function () {
   const nav = $("#main-nav");
+  const scrollUp = $(".scroll-up");
   const mediumScreenSize = 768;
 
   if ($(window).scrollTop() > 0 && $(window).width() > mediumScreenSize) {
     nav.removeClass("navbar-dark bg-transparent");
     nav.addClass("navbar-light bg-white");
+    scrollUp.addClass("d-md-block");
+
   } else {
     nav.removeClass("navbar-light bg-white");
     nav.addClass("navbar-dark bg-transparent");
+    scrollUp.removeClass("d-md-block");
   }
 });
+
 
 // Lightbox init
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
@@ -38,7 +43,7 @@ $('body').scrollspy({ target: '#main-nav', offset: navbarHeight });
 
 
 // Smooth Scrolling
-$("#main-nav a, #home a").on('click', function (e) {
+$("#main-nav a, #home a, .scroll-up a").on('click', function (e) {
   if (this.hash !== "") {
     e.preventDefault();
 
