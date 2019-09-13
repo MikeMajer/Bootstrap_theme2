@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Qwigley&display=swap');
 
 
 // Variables
 $theme-color1:#ffc107;
 $theme-color2:#6c757d;
-
 
 
 body {
@@ -14,8 +14,8 @@ body {
 // Navbar
 #main-nav {
   transition: 1s;
-  .nav-link{
-    &.active{
+  .nav-link {
+    &.active {
       color:$theme-color1;
     }
   }
@@ -64,6 +64,10 @@ body {
     display: flex;
     align-items: center;
     min-height: 88vh;
+    h1 {
+      font-family: 'Qwigley', cursive;
+      font-size: 140px;
+    }
   }
   .home-footer {
     min-height: 12vh;
