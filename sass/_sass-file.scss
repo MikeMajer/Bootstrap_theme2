@@ -156,11 +156,14 @@ body {
 
 
 // Form style
-.form-control:focus {
-  border-color: $theme-color1;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px $theme-color1;
+.form-control {
+  -webkit-appearance : none;
+  &:focus {
+    border-color: $theme-color1;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px $theme-color1;
+  }
 }
-
+  
 .custom-checkbox {
   .custom-control-input:focus {
     ~ .custom-control-label::before {
