@@ -42,6 +42,7 @@ body {
   border-radius: 50%;
   border: 3px solid $theme-color1;
   text-align: center;
+  z-index: 2;
   a {
     color:$theme-color2;
     font-size: 30px;
